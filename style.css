@@ -30,18 +30,20 @@ body {
   to { opacity: 1; }
 }
 
-/* Header */
 header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: transparent; /* ❌ hilangkan warna */
-  backdrop-filter: none;         /* ❌ hilangkan blur */
-  box-shadow: none;              /* ❌ hilangkan bayangan */
-  border-radius: 0;              /* ❌ hapus lengkungan */
+  background-color: rgba(255, 255, 255, 0.3); /* transparan soft */
   padding: 1rem 2rem;
-}
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  /* bayangan lembut */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 
+  /* ❌ HAPUS efek blur */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 
 /* Navigasi */
 .nav {
@@ -50,36 +52,35 @@ header {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
-  background-color: transparent; /* pastikan ini gak ada background */
-  padding: 0; /* atau kecil aja */
 }
-
 
 nav {
   display: flex;
-  gap: 1rem;
-  background-color: transparent; /* hilangin kotaknya */
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
-  backdrop-filter: none;
+  gap: 1.5rem;
+  background-color: transparent;
 }
 
 nav a {
   color: var(--color-text-dark);
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.4rem 0.8rem;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-left: 1rem; 
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  border-radius: 0px; /* no kotak */
 }
 
-nav a.active {
-  background-color: #fbe7c6;
-  color: #5a3200;
-  border-bottom: 2px solid #c89b6e;
+/* Hover */
+nav a:hover {
+  color: #a0522d; /* warna pas disentuh */
 }
+
+/* Aktif */
+nav a.active {
+  border-bottom: 2px solid #d69b5d;
+  color: #5a3200;
+}
+
 
 
 /* Logo */
