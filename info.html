@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Info Warung THARISTA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <img src="logo.jpg" alt="Logo Warung" class="logo" />
+      <nav>
+        <a href="index.html">Tentang Kami</a>
+        <a href="bestseller.html">Menu</a>
+        <a href="info.html">Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <h1>Informasi Warung THARISTA</h1>
+    <p>Kami siap melayani kebutuhan snack dan makanan untuk berbagai acara!</p>
+
+    <!-- Info Usaha -->
+    <section class="info-box">
+      <h2>📍 Alamat & Jam Operasional</h2>
+      <section class="contact-info">
+      <h2>Hubungi Kami Langsung</h2>
+      <p><strong>Alamat:</strong>  DS. Sawangan RT 1 RW 5 Kuwarasan, Kebumen</p>
+      <p><strong>Jam Buka:</strong> Setiap Hari, 07.00 - 21.00 WIB</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6283890213265" target="_blank">+62 838-9021-3265</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/warung_tharista" target="_blank">@warung_tharista</a></p>
+    </section>
+
+    <!-- Tombol Unduh Menu -->
+    <button id="downloadMenuBtn" class="btn-order">Unduh Menu</button>
+
+    <!-- Modal Unduh Menu -->
+    <div class="modal" id="menuModal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">&times;</span>
+        <h2>Unduh Menu</h2>
+        <p>Klik tombol di bawah ini untuk mengunduh menu lengkap Warung THARISTA dalam format gambar.</p>
+        <button id="downloadBtn" class="btn-order">Download Menu</button>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Warung THARISTA - Snack & Catering</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const downloadMenuBtn = document.getElementById('downloadMenuBtn');
+      const menuModal = document.getElementById('menuModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const downloadBtn = document.getElementById('downloadBtn');
+
+      downloadMenuBtn.addEventListener('click', () => {
+        menuModal.classList.add('show');
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+        menuModal.classList.remove('show');
+      });
+
+      downloadBtn.addEventListener('click', () => {
+        const imageUrl = 'menu.jpg';
+        const fileName = 'Menu_Warung_THARISTA.jpg';
+
+        const link = document.createElement('a');
+        link.href = imageUrl;
+        link.download = fileName;
+        link.click();
+
+        menuModal.classList.remove('show');
+        alert('Menu berhasil diunduh!');
+      });
+
+      window.addEventListener('click', (e) => {
+        if (e.target === menuModal) {
+          menuModal.classList.remove('show');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

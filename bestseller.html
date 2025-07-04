@@ -1,0 +1,493 @@
+<!-- File: bestseller.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu - Warung THARISTA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .modal-content {
+      max-height: 90vh;
+      overflow-y: auto;
+      
+    }
+    #productModalDescription {
+      max-height: 250px;
+      overflow-y: auto;
+      padding-right: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <img src="logo.jpg" alt="Logo Warung" class="logo">
+      <nav>
+        <a href="index.html">Tentang Kami</a>
+        <a href="bestseller.html">Menu</a>
+        <a href="info.html">info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+   <div class="discount-banner">
+  <span>🔥 DISKON KHUSUS!</strong> Mau harga lebih hemat? Yuk, pesan dalam jumlah banyak dan nikmati potongan harga spesial dari Warung THARISTA! 🔥</span>
+</div>
+
+   
+  
+    <!-- Best Sellers Section -->
+    <div class="best-sellers">
+      <h2>Rasa Juara, Pilihan Utama!</h2>
+      
+      <div class="products-grid">
+       <!-- Product 1 -->
+<div class="product-card clickable"
+     data-name="Nasi Kotak Ayam Goreng"
+     data-image="nasi kotak.jpg"
+     data-description="Nasi kotak dengan ayam goreng, lauk dan nasi, cocok untuk acara tasyakuran.">
+  <img 
+    src="nasi kotak.jpg" 
+    alt="Nasi Ayam Goreng" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Nasi Kotak Ayam Goreng</h3>
+    <div class="product-price">Rp 10.000/box</div>
+    </a>
+  </div>
+</div>
+
+
+        
+        <!-- Product 2 -->
+<div class="product-card clickable"
+     data-name="Risol sayur dan mayo"
+     data-image="risol.jpg"
+     data-description="Risol dengan isian sayur segar dan mayo yang creamy, cocok sebagai cemilan lezat.">
+  <img 
+    src="risol.jpg" 
+    alt="Risol" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Risol sayur dan mayo</h3>
+    <div class="product-price">Rp 1.500-2.500/pcs</div>
+  </div>
+</div>
+
+
+        
+      <!-- Product 3 -->
+<div class="product-card clickable"
+     data-name="Tumpeng"
+     data-image="tumpeng.jpg"
+     data-description="Tumpeng tradisional dengan berbagai pilihan isi, cocok untuk acara spesial dan syukuran.">
+  <img 
+    src="tumpeng.jpg" 
+    alt="tumpeng" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Tumpeng</h3>
+    <div class="product-price">Rp 250.000-300.000/sesuai isi</div>
+  </div>
+</div>
+
+        
+      <!-- Product 4 -->
+<div class="product-card clickable"
+     data-name="Pie Buah"
+     data-image="pie buah.jpg"
+     data-description="Pie buah segar dengan rasa manis dan lezat, cocok untuk hidangan acara.">
+  <img 
+    src="pie buah.jpg" 
+    alt="Pie Buah" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Pie Buah</h3>
+    <div class="product-price">Rp 2.500/pcs</div>
+  </div>
+</div>
+
+
+         <!-- Product 5 -->
+<div class="product-card clickable"
+     data-name="Nasi Kotak Lele"
+     data-image="nasi lele.jpg"
+     data-description="Nasi kotak dengan lauk lele goreng gurih dan sambal khas yang menggugah selera. Cocok untuk acara dan makan siang praktis.">
+  <img 
+    src="nasi lele.jpg" 
+    alt="Nasi Lele" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Nasi Kotak Lele</h3>
+    <div class="product-price">Rp 15.000/box</div>
+  </div>
+</div>
+
+
+       <!-- Product 6 -->
+<div class="product-card clickable"
+     data-name="Bolu Cake"
+     data-image="Bolu Cake.jpg"
+     data-description="Bolu cake lembut dengan berbagai varian rasa, cocok untuk oleh-oleh dan acara spesial Anda.">
+  <img 
+    src="Bolu Cake.jpg" 
+    alt="Bolu Cake" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Bolu Cake</h3>
+    <div class="product-price">Rp 35.000/Loyang</div>
+  </div>
+</div>
+
+
+        <!-- Product 7 -->
+<div class="product-card clickable"
+     data-name="Semar Mendem"
+     data-image="Semar Mendem.jpg"
+     data-description="Kue tradisional lezat dengan isian khas, cocok untuk acara spesial anda.">
+  <img 
+    src="Semar Mendem.jpg" 
+    alt="Semar Mendem" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Semar Mendem</h3>
+    <div class="product-price">Rp 2.500/pcs</div>
+  </div>
+</div>
+
+        <!-- Product 8 -->
+<div class="product-card clickable"
+     data-name="Bakpau"
+     data-image="Bakpau.jpg"
+     data-description="Bakpau lembut dengan berbagai isian gurih dan manis, cocok untuk cemilan kapan saja.">
+  <img 
+    src="Bakpau.jpg" 
+    alt="Bakpau" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Bakpau</h3>
+    <div class="product-price">Rp 1.500/pcs</div>
+  </div>
+</div>
+
+
+       <!-- Product 9 -->
+<div class="product-card clickable"
+     data-name="Kacang Telor"
+     data-image="Kacang Telor.jpg"
+     data-description="Kacang Telor renyah dengan lapisan telur gurih, cemilan favorit yang cocok untuk semua acara.">
+  <img 
+    src="Kacang Telor.jpg" 
+    alt="Kacang Telor" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Kacang Telor</h3>
+    <div class="product-price">Rp 1.500/pcs</div>
+  </div>
+</div>
+
+
+        <!-- Product 10 - Semua Hantaran di Satu Tempat -->
+<div class="product-card clickable"
+     data-name="Paket Hantaran Lengkap"
+     data-image="hantaran.jpg"
+     data-description='
+<ul style="text-align: left; padding-left: 1rem;">
+  <li><strong>Hantaran Kweku (Rp 55.000):</strong> Kue Kweku isi 30 pcs di nampan coklat. Kue tradisional kenyal dan manis.</li>
+  <li><strong>Hantaran Ager Mata Sapi (Rp 70.000):</strong> Ager warna-warni isi 30 pcs, segar dan cocok untuk anak-anak.</li>
+  <li><strong>Hantaran Pai Buah (Rp 85.000):</strong> Pai mini isi 30 pcs, dengan topping buah segar dan krim lembut.</li>
+  <li><strong>Hantaran Kroket Kentang (Rp 85.000):</strong> Kroket kentang isi 30 pcs, gurih dan lembut, cocok untuk semua acara.</li>
+  <li><strong>Hantaran Risoles Mayo (Rp 110.000):</strong> Risoles isi 50 pcs dengan mayo dan smoked beef. Favorit semua kalangan.</li>
+  <li><strong>Dadar Gulung Pisang Coklat (Rp 110.000):</strong> Dadar gulung isi 50 pcs, dengan pisang dan coklat leleh.</li>
+  <li><strong>Hantaran Lemper Ayam (Rp 130.000):</strong> Lemper isi 60 pcs, ketan isi ayam suwir bumbu gurih, mengenyangkan.</li>
+</ul>'>
+  <img 
+    src="hantaran.jpg" 
+    alt="Paket Hantaran Lengkap" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Paket Hantaran Lengkap</h3>
+    <div class="product-price">Rp 55.000 - Rp 130.000</div>
+  </div>
+</div>
+
+
+
+
+       <!-- Product 11 -->
+<div class="product-card clickable"
+     data-name="Puding Coklat"
+     data-image="Puding Coklat.jpg"
+     data-description="Puding coklat lembut dan manis, favorit semua usia, cocok sebagai pencuci mulut yang menyegarkan.">
+  <img 
+    src="Puding Coklat.jpg" 
+    alt="Puding Coklat" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Puding Coklat</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+
+        <!-- Product 12 -->
+<div class="product-card clickable"
+     data-name="Arem Arem"
+     data-image="Arem Arem.jpg"
+     data-description="Arem arem, snack tradisional dengan isi nasi dan lauk yang lezat, cocok untuk cemilan atau oleh-oleh.">
+  <img 
+    src="Arem Arem.jpg" 
+    alt="Arem Arem" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Arem Arem</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+
+       <!-- Product 13 -->
+<div class="product-card clickable"
+     data-name="Dadar Gulung Pisang Coklat"
+     data-image="Dadar gulung pisang coklat.jpg.jpg"
+     data-description="Dadar gulung pisang coklat, kue tradisional manis dengan isian pisang dan coklat, favorit semua usia.">
+  <img 
+    src="Dadar gulung pisang coklat.jpg.jpg" 
+    alt="dadar gulung pisang coklat" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Dadar Gulung Pisang Coklat</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+
+
+        <!-- Product 14 -->
+<div class="product-card clickable"
+     data-name="Lapis Budin"
+     data-image="Lapis Budin.jpg"
+     data-description="Lapis Budin, kue lapis legit dengan cita rasa manis dan tekstur lembut, cocok untuk cemilan keluarga.">
+  <img 
+    src="Lapis Budin.jpg" 
+    alt="lapis budin" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Lapis Budin</h3>
+    <div class="product-price">Rp 1.500/pcs</div>
+  </div>
+</div>
+
+<!-- Product 15 -->
+<div class="product-card clickable"
+     data-name="Putri Mandi"
+     data-image="Putri Mandi.jpg"
+     data-description="Putri Mandi, kue tradisional manis dengan tekstur lembut dan aroma harum yang menggoda. Cocok untuk teman minum teh.">
+  <img 
+    src="Putri Mandi.jpg" 
+    alt="putri mandi" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Putri Mandi</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+<!-- Product 16 -->
+<div class="product-card clickable"
+     data-name="Puding Mata Sapi"
+     data-image="Puding Telur.jpg"
+     data-description="Puding Mata Sapi adalah puding segar dengan tekstur kenyal dan rasa manis legit, cocok untuk pencuci mulut yang menyegarkan.">
+  <img 
+    src="Puding Telur.jpg" 
+    alt="puding mata sapi" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Puding Mata Sapi</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+<!-- Product 17 -->
+<div class="product-card clickable"
+     data-name="Tahu Fantasi"
+     data-image="Tahu Fantasi.jpg"
+     data-description="Tahu Fantasi adalah tahu goreng dengan isian dan rasa unik, cocok sebagai camilan gurih yang renyah dan lezat.">
+  <img 
+    src="Tahu Fantasi.jpg" 
+    alt="tahu fantasi" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Tahu Fantasi</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+<!-- Product 18 -->
+<div class="product-card clickable"
+     data-name="Lemper Ayam Suwir/Isi Abon"
+     data-image="Lemper Ayam Suwir.jpg"
+     data-description="Lemper dengan isian ayam suwir atau abon, cocok untuk cemilan tradisional yang nikmat dan praktis.">
+  <img 
+    src="Lemper Ayam Suwir.jpg" 
+    alt="lemper ayam suwir" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Lemper Ayam Suwir/Isi Abon</h3>
+    <div class="product-price">Rp 1.500-2.000/pcs</div>
+  </div>
+</div>
+
+<!-- Product 19 -->
+<div class="product-card clickable"
+     data-name="Lemper Cetak Isi Abon"
+     data-image="Lemper Cetak Isi Abon.jpg"
+     data-description="Lemper cetak dengan isian abon yang gurih dan lezat, cemilan tradisional favorit banyak orang.">
+  <img 
+    src="Lemper Cetak Isi Abon.jpg" 
+    alt="lemper cetak isi abon" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Lemper Cetak Isi Abon</h3>
+    <div class="product-price">Rp 2.000/pcs</div>
+  </div>
+</div>
+
+<!-- Product 20 -->
+<div class="product-card clickable"
+     data-name="Kweku Isi Kelapa/Kacang Hijau"
+     data-image="Kweku isi kelapa.jpg"
+     data-description="Kue tradisional Kweku dengan isi kelapa atau kacang hijau, pilihan cemilan manis dan lezat.">
+  <img 
+    src="Kweku isi kelapa.jpg" 
+    alt="kweku isi kelapa/kacang hijau" 
+    class="product-image"
+  >
+  <div class="product-info">
+    <h3 class="product-name">Kweku Isi Kelapa/Kacang Hijau</h3>
+    <div class="product-price">Rp 1.500-2.000/pcs</div>
+  </div>
+</div>
+
+        
+      <!-- Modal Deskripsi -->
+<div class="modal" id="productModal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeProductModalBtn">&times;</span>
+    <h2 id="productModalTitle">Judul Produk</h2>
+    <img id="productModalImage" src="" alt="Gambar Produk" class="modal-image">
+    <div id="productModalDescription"></div>
+
+    <!-- ✅ Tambahkan input jumlah di sini -->
+    <label for="qtyInput">Jumlah yang ingin dipesan:</label>
+    <input type="number" id="qtyInput" min="1" placeholder="Contoh: 10" style="margin: 10px 0; padding: 5px;">
+
+    <!-- Tombol WA -->
+    <a id="waOrderBtn" href="#" target="_blank" class="btn-order">Pesan Sekarang</a>
+  </div>
+</div>
+  </main>
+
+  <footer>
+    <p>© 2025 Tharis Snack dan Catering</p>
+  </footer>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Modal Produk
+  const productModal = document.getElementById('productModal');
+  const closeProductModalBtn = document.getElementById('closeProductModalBtn');
+  const productModalTitle = document.getElementById('productModalTitle');
+  const productModalImage = document.getElementById('productModalImage');
+  const productModalDescription = document.getElementById('productModalDescription');
+  const waBtn = document.getElementById("waOrderBtn");
+
+  if (productModal) {
+  let selectedCard = null;
+
+  document.querySelectorAll('.product-card.clickable').forEach(card => {
+    // Buat ID unik dari nama produk
+    const name = card.getAttribute('data-name');
+    const id = name.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]/g, '');
+    card.setAttribute('id', id);
+
+    card.addEventListener('click', () => {
+      const productName = card.getAttribute('data-name');
+      const productDesc = card.getAttribute('data-description');
+      const productImage = card.getAttribute('data-image');
+
+      // Tampilkan isi modal
+      productModalTitle.textContent = productName;
+      productModalImage.src = productImage;
+      productModalImage.alt = productName;
+      productModalDescription.innerHTML = productDesc;
+
+      selectedCard = card;
+
+      productModal.classList.add('show');
+      document.body.classList.add('modal-open');
+    });
+  });
+
+  waBtn.onclick = function () {
+    const qty = document.getElementById("qtyInput").value;
+    if (!qty || qty <= 0) {
+      alert("Masukkan jumlah yang ingin dipesan yaa 😊");
+      return false;
+    }
+
+    const name = productModalTitle.textContent;
+    const price = selectedCard?.querySelector('.product-price')?.textContent || '-';
+    const id = selectedCard?.id || '';
+    const link = `https://warungtharista.com/bestseller.html#${id}`;
+
+    const message = `Halo, saya mau pesan produk ini ya~%0A` +
+                    `🍽️ *${name}*%0A` +
+                    `💰 ${price}%0A` +
+                    `📦 Jumlah: ${qty} pcs%0A` +
+                    `🔗 ${link}`;
+
+    const waLink = `https://wa.me/6283890213265?text=${message}`;
+    window.open(waLink, "_blank");
+    return false;
+  };
+
+  closeProductModalBtn.addEventListener('click', () => {
+    productModal.classList.remove('show');
+    document.body.classList.remove('modal-open');
+    document.getElementById("qtyInput").value = '';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === productModal) {
+      productModal.classList.remove('show');
+      document.body.classList.remove('modal-open');
+    }
+  });
+}
+
+  console.log("🎉 Script aktif! Selamat datang di Warung THARISTA!");
+});
+</script>
