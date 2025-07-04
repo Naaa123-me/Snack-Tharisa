@@ -465,15 +465,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    const message = `Halo, saya mau pesan produk ini ya~%0A` +
-                    `🍽️ *${name}*%0A` +
-                    `💰 ${price}%0A` +
-                    `📦 Jumlah: ${qty} pcs%0A` +
-                    `🔗 ${link}`;
+    const message = `Halo, saya mau pesan produk ini ya~\n` +
+                `🍽️ *${name}*\n` +
+                `💰 ${price}\n` +
+                `📦 Jumlah: ${qty} pcs\n` +
+                `🔗 ${link}`;
 
-    const waLink = `https://wa.me/6283890213265?text=${message}`;
-    window.open(waLink, "_blank");
-    return false;
+const waLink = `https://wa.me/6283890213265?text=${encodeURIComponent(message)}`;
+window.open(waLink, "_blank");
+return false;
+
   };
 
   closeProductModalBtn.addEventListener('click', () => {
