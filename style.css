@@ -138,15 +138,16 @@ main {
 
 /* Tentang Kami */
 .about {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.85); /* transparan putih lembut */
   border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  backdrop-filter: blur(3px); /* kasih sedikit blur di belakang */
   padding: 60px 30px;
   margin: 2rem auto;
   max-width: 900px;
   text-align: center;
 }
+
 
 .about-img {
   width: 100%;
