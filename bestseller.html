@@ -461,7 +461,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const name = productModalTitle.textContent;
     const price = selectedCard?.querySelector('.product-price')?.textContent || '-';
     const id = selectedCard?.id || '';
-    const link = `https://warungtharista.com/bestseller.html#${id}`;
+    const link = `https://warungtharista.com/bestseller.html?product=${id}`;
+
 
     const message = `Halo, saya mau pesan produk ini ya~%0A` +
                     `🍽️ *${name}*%0A` +
@@ -487,6 +488,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 }
+  // Auto klik produk dari link ?product=namaproduk
+const urlParams = new URLSearchParams(window.location.search);
+const targetId = urlParams.get('product');
+if (targetId) {
+  setTimeout(() => {
+    const targetCard = document.getElementById(targetId);
+    if (targetCard) {
+      targetCard.click();
+    }
+  }, 500); // kasih jeda setengah detik biar produk siap diklik
+}
+
 
   console.log("🎉 Script aktif! Selamat datang di Warung THARISTA!");
 });
