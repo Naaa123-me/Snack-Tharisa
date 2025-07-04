@@ -35,13 +35,13 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: rgba(255, 248, 239, 0.8);
-  backdrop-filter: blur(10px);
+  background-color: transparent; /* ❌ hilangkan warna */
+  backdrop-filter: none;         /* ❌ hilangkan blur */
+  box-shadow: none;              /* ❌ hilangkan bayangan */
+  border-radius: 0;              /* ❌ hapus lengkungan */
   padding: 1rem 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
+
 
 /* Navigasi */
 .nav {
