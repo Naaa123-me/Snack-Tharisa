@@ -34,16 +34,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.3); /* transparan soft */
+  background-color: #fff8ec; /* warna solid lembut, ganti sesuai selera */
   padding: 1rem 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);  /* bayangan lembut */
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-
-  /* ❌ HAPUS efek blur */
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* bayangan lembut */
+  border-radius: 0; /* kotak lurus */
 }
+
 
 /* Navigasi */
 .nav {
@@ -52,6 +48,7 @@ header {
   justify-content: space-between;
   max-width: 1200px;
   margin: auto;
+  padding: 0;
 }
 
 nav {
@@ -63,17 +60,25 @@ nav {
 nav a {
   color: var(--color-text-dark);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
-  border-radius: 0px; /* no kotak */
+  border-radius: 0; /* lurus, gak rounded */
+  transition: all 0.3s ease;
 }
 
-/* Hover */
+/* Hover efek */
 nav a:hover {
-  color: #a0522d; /* warna pas disentuh */
+  background-color: #fcefdc; /* dikasih warna latar waktu hover */
+  color: #5a3200;
 }
+
+/* Aktif */
+nav a.active {
+  border-bottom: 2px solid #d69b5d;
+  color: #5a3200;
+}
+
 
 /* Aktif */
 nav a.active {
